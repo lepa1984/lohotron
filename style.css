@@ -1,0 +1,245 @@
+* {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+}
+.wrapper {
+    padding: 100px 0;
+}
+.tabloAll {
+    height: 120px;
+    position: relative;
+}
+
+#mix {
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1px #055f05 solid;
+    /* border: none; */
+    color: white;
+    background-color: green;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.tablo {
+    /* min-height: 36px;*/
+    /*
+                margin-top: 30px;*/
+    font-size: 24px;
+    font-weight: 600;
+    color: green;
+    padding: 0px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cupes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 500px;
+    max-width: 100%;
+    /*overflow: hidden;*/
+    margin: auto;
+    font-size: 74px;
+    font-weight: 600;
+    position: relative;
+    color: green;
+}
+.cupes h2 {
+    font-size: 74px;
+    font-weight: 600;
+    color: green;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+@media (max-width: 575px) {
+    .cupes {
+        width: 100%;
+    }
+}
+
+.cup {
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    position: relative;
+    width: 32%;
+    left: 0;
+    cursor: pointer;
+}
+.tablo-win {
+    font-size: 34px;
+    font-weight: 600;
+    color: green;
+    padding: 0px;
+    height: 55px;
+}
+
+/*РђРЅРёРјР°С†РёСЏ РєР°СЂС‚РёРЅРѕРє*/
+
+.img1 {
+    -webkit-animation-name: anim_img1;
+    animation-name: anim_img1;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.img2 {
+    -webkit-animation-name: anim_img2;
+    animation-name: anim_img2;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.img3 {
+    -webkit-animation-name: anim_img3;
+    animation-name: anim_img3;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+@-webkit-keyframes anim_img1 {
+    from {
+        left: 0;
+    }
+    25% {
+        left: 64%;
+    }
+    50% {
+        left: 32%;
+    }
+    75% {
+        left: 0;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@keyframes anim_img1 {
+    from {
+        left: 0;
+    }
+    25% {
+        left: 64%;
+    }
+    50% {
+        left: 32%;
+    }
+    75% {
+        left: 0;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@-webkit-keyframes anim_img2 {
+    from {
+        left: 0;
+    }
+    25% {
+        left: 0;
+    }
+    50% {
+        left: 32%;
+    }
+    75% {
+        left: 32%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@keyframes anim_img2 {
+    from {
+        left: 0;
+    }
+    25% {
+        left: 0;
+    }
+    50% {
+        left: 32%;
+    }
+    75% {
+        left: 32%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@-webkit-keyframes anim_img3 {
+    from {
+        left: 0;
+    }
+    25% {
+        left: -64%;
+    }
+    50% {
+        left: -64%;
+    }
+    75% {
+        left: -32%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@keyframes anim_img3 {
+    from {
+        left: 0;
+    }
+    25% {
+        left: -64%;
+    }
+    50% {
+        left: -64%;
+    }
+    75% {
+        left: -32%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.display-none {
+    opacity: 0;
+    visibility: hidden;
+}
